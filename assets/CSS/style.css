@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+    --yellow-color: #FFFF00;
+    --yellow-light: #F8F184;
+    --blue-color: #19587D;
+    --red-color: #B11313;
+    --black-light: #0D0E09;
+    --grey-color: #C4C4C4;
+    --black-color: #000;
+    --white-color: #FFF;
+    --gradient-white: #EDDEBF40;
+    --gradient-red: #89000960;
+    --gradient-grey: #EDDEBF40;
+    --gradient-blue: #19587D40;
+}
+header{
+    background-image: url(../Illustrations/Bathome1.png); 
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    /*box-sizing: border-box;*/
+}
+body{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-family: 'Space Grotesk';
+    font-weight: 300;
+    background-image: url(../Illustrations/Bathome12.png);
+    background-repeat: no-repeat;
+    background-size: 34%;
+    background-position: 887px 2570px;
+}
+.up-bar{
+    border-top: #BCBBBD 2px solid;
+    position: relative;
+    top: 132px;
+    width: 87%;
+    left: 102px;
+    opacity: 20%;
+    
+}
+
+.left-bar{
+    background-color: #BCBBBD 2px solid;
+    height: 8000px;
+    left: 89%;
+    top: 0px;
+    border-left: 1px solid #BCBBBD;
+    position: absolute;
+    margin-left: 102px;
+    opacity: 20%;
+}
+
+.right-bar{
+    background-color: #BCBBBD 2px solid;
+    height: 8000px;
+    right: 87%;
+    top: 0px;
+    border-left: 1px solid #BCBBBD;
+    position: absolute;
+    margin-right: 102px;
+    opacity: 20%;
+}
+
+h1{
+    font-family: 'Rajdhani';
+    font-size: 36px;
+    font-weight: 500;
+}
+button{
+    font-family: 'Rajdhani';
+    font-size: 20px;
+    font-weight: 500;
+}
+.container{
+    width: 80%;
+    margin: 0% auto;
+}
+
+
+/*Design de la navigation*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+ul{
+    list-style: none;
+}
+nav ul a{
+    color: var(--white-color);
+    font-size: 30px;
+    font-family: 'Rajdhani';
+    font-weight: 500;
+}
+nav ul a:hover{
+    color: var(--yellow-color);
+}
+.logo:hover{
+    color: var(--yellow-color);
+    cursor: pointer;
+}
+.logo:hover{
+    -webkit-filter:invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%);
+    filter: invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%);
+}
+.logo-f:hover{
+    -webkit-filter:invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%);
+    filter: invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%);
+}
+.social:hover{
+    -webkit-filter:invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%);
+    filter: invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%);
+}
+.image-container:hover{
+    transform: scale(1.1);
+}
+
+/*design du header hero*/
+
+#hero .fleche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 850px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    margin: -550px auto;
+    padding-top: 50px;
+}
+.content .texte{
+    font-size: 20px;
+}
+#hero .titre{
+    margin: 50px 0;
+}
+#hero .texte{
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+}
+.btn{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 18px;
+    padding: 15px 30px;
+    margin: 20px;
+    margin-top: 10px;
+    opacity: 40%;
+    background: linear-gradient(10deg,var(--white-color), var(--gradient-red));
+    box-shadow: var(--black-color) 15px 15px 50px;
+}
+.btn:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    opacity: 100%;
+}
+
+/* position fleche */
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    top: 200px;
+}
+
+.scroll .social{
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+h1{
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+
+/*design de la section batman au cinema*/
+#batman-cinema{
+    margin-top: 150px;
+}
+#batman-cinema .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 90%;
+    font-size: 20px;
+}
+.batman-personnages{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin: 40px 0;
+    
+}
+#batman-cinema .personnage-info{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px;
+}
+.batman-item:hover{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transform: scale(110%);
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+/*design de la section nemesis*/
+#nemesis{
+    margin-top: 90px;
+}
+#nemesis .titre{
+    background-image:url(../Illustrations/Bathome13.png) ;
+    background-size: 75%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 35px 0;
+    padding-top: 90px;
+    width: 22%;
+}
+#nemesis .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 90%;
+    font-size: 20px;
+}
+.nemesis-personnage{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+#nemesis .nemesis-info{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px;
+}
+.nemesis-item:hover{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transform: scale(110%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*design de la section allies*/
+#allies{
+    margin-top: 200px;
+}
+.allies-personnages{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+#allies .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 90%;
+    font-size: 20px;
+}
+#allies .allies-info{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px;
+}
+.allies-item:hover{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transform: scale(110%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*design de la section justice league*/
+#batman-justice-league{
+    margin-top: 90px;
+}
+
+#batman-justice-league .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: -20px;
+    margin: 65px; 
+}
+
+#batman-justice-league .description{
+    margin-bottom: 70px;
+    text-align: justify;
+    width: 90%;
+    font-size: 20px;
+    margin: 70px;
+    padding-top: 0 auto;
+    
+}
+
+.justice-league{
+    position: absolute;
+}
+
+/*Design de la partie multimédia */
+#multimédia .titre{
+    padding-top: 70px;
+    
+}
+
+#multimédia{
+    padding-top: 15cm;
+}
+
+
+#multimédia button{
+    position: relative;
+    background: none;
+    border: none;
+    top: 160px
+}
+
+#multimédia button.right{
+    right: -85%;
+}
+
+#multimédia .slider-multimédia{
+    display: flex;
+    width: 60%;
+    margin: 10px auto;
+    padding: 30px;
+    font-family: 'Space Grotesk';
+    
+}
+#multimédia .slider-image{
+    width: 100%;
+
+}
+#multimédia .slider-content{
+    padding: 15px;
+    background: linear-gradient(var(--gradient-white), var(--gradient-blue));
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px; 
+}
+
+
+#multimédia p{
+    font-size: 13px;
+}
+
+#multimédia .yellow{
+    color: var(--yellow-color);
+}
+
+#multimédia .image-bande-annonce{
+    padding: 90px 0;
+}
+
+/*Design de la partie formulaire */
+
+#contact{
+    background: linear-gradient(var(--gradient-white), var(--gradient-grey));
+    padding: 70px 0;
+    width: 100%;
+}
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 65px;
+    padding-top: 5px;
+}
+#contact .titre{
+    display: block;
+    margin: 25px 0;
+    padding-top: 20px;
+}
+#contact .form input[type='email'] , textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    border-bottom: 2px solid rgb(194, 180, 180);
+    background-color: transparent;
+    padding: 10px 0;
+}
+#contact .form input[type='text'] , textarea{
+    float: inline-end;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    border-bottom: 2px solid rgb(194, 180, 180);
+    background-color: transparent;
+    padding: 10px 0;
+}
+select {
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    border-bottom: 2px solid rgb(194, 180, 180);
+    padding: 10px 0;
+    color: var(--white-color);
+    background-color:linear-gradient(var(--gradient-white), var(--gradient-grey));
+    font-family: 'Space Grotesk';
+    margin-bottom: 30px;
+}
+
+
+#contact .news{
+    margin: 15px 0;
+    border-bottom: 2px solid rgb(194, 180, 180) ;
+}
+
+::placeholder{
+    color: var(--grey-color);
+}
+
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.form input[type='radio']{
+    opacity: 0;
+}
+.btn-group label{
+    cursor: pointer;
+    border: 2px solid;
+    padding: 10px;
+    -o-border-image: linear-gradient(69deg, grey, blue) 1;
+    border-image: linear-gradient(69deg, rgba(128, 128, 128, 0.356), rgba(153, 153, 226, 0.438)) 1 ;
+    font-size: 12px;
+    opacity: 70%;
+    
+}
+.btn-group label:hover{
+    opacity: 100%;
+}
+
+.pop a{
+    display: block;
+    width: 230px;
+    margin: 70px auto;
+    padding: 15px 0;
+    cursor: pointer;
+    color: var(--gradient-White);
+    background: linear-gradient(
+        50deg,var(--white-color), var(--gradient-red)
+    );
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+#submit:target{
+    visibility: visible;
+    opacity: 5;
+}
+
+#submit{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: linear-gradient(
+         var(--gradient-white), var(--gradient-grey));
+    
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    height: 20vh;
+    width: 600px;
+    max-width: 100%;
+    border-radius: 4px;
+    position: relative;
+    top: -400px;
+    visibility: hidden;
+    opacity: 0;
+    
+    
+}
+
+.submit_close{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #BCBBBD;
+    text-decoration: none;
+}
+
+input[type='submit']{
+    display: block;
+    width: 230px;
+    color: var(--white-color);
+    margin: 25px auto;
+    padding: 15px 30px;
+    font-family: 'rajdhani';
+    background: linear-gradient(180deg,var(--gradient-white), var(--gradient-red));
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.submit:hover {
+    background: linear-gradient(10deg,var(--white-color), var(--gradient-red));
+    font-weight: bold;
+}
+
+/*Design de la partie citation */
+#citation {
+    margin: 90px;
+}
+#citation .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+#citation .citation-auteur{
+    padding-top: 30px;
+    font-size: 12px;
+    font-family: 'rajdhani';
+}
+#citation .guillemet-close{
+    float: right;
+}
+
+/*Design de la partie footer */
+footer{
+    margin-top: 160px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 9px;
+    margin-bottom: 50px;
+}
+footer .social-footer{
+    text-align: center;
+    font-size: 14px;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 18px;
+    
+}
